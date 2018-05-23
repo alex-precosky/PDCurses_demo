@@ -1,0 +1,10 @@
+# CMake
+Testing
+CMakeFiles
+cmake_install.cmake
+CTestTestfile.cmake
+CMakeLists.txt.user
+CMakeCache.txt
+
+# Emacs backup files
+*~
