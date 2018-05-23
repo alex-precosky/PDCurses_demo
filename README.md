@@ -37,10 +37,12 @@ And the bincrafters respository for conan will need to be set up:
 conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
 ```
 
+The requirements as set up in the file conanfile.txt can be compiled and installed in the user home directory as:
 ```shell
 cd build
 conan install .. --build
 ```
+
 
 # Building
 ```shell
