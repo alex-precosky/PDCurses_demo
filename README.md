@@ -6,7 +6,6 @@ A short demo using PDCurses in a Windows terminal via the conan package manager 
 
 # Requirements
 
-* C++ build system
 * CMake 3.2+
 * C++ Compiler, likely visual studio build tools
 * python 3 and pip (to install the conan package manager)
@@ -54,6 +53,6 @@ To build the project files to compile this:
     $ cmake .. -G "Visual Studio 14 2015 Win64"
     $ cmake --build .
 
-Adjusting the output project file as necessary depending on the version of visual studio to build for.  Then the project can be build as...
+Adjusting the output project file as necessary depending on the version of visual studio to build for.  Then the project can be built as...
 
     $ msbuild /p:Configuration=Release Project.sln
