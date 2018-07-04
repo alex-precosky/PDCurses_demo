@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2)
-project(MyProject)
+project(PdCursesDemo)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
@@ -12,8 +12,8 @@ set(SOURCE_FILES main.cpp)
 
 include_directories(include)
 
-add_executable(MyProject ${SOURCE_FILES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-target_link_libraries(MyProject ${CONAN_LIBS})
-install(TARGETS MyProject DESTINATION bin)
+target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
+install(TARGETS PdCursesDemo DESTINATION bin)
 

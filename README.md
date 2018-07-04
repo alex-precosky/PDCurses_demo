@@ -31,17 +31,19 @@ devleopers, so use of 3 is recommended.
 pip3 install conan
 ```
 
-And the bincrafters respository for conan will need to be set up:
+And bintray respository for pdcurses will need to be set up:
 
-```shell
-conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
-```
+    $ conan remote add alexwarrior-conan https://api.bintray.com/conan/alexwarrior-org/alexwarrior-conan
+
 
 The requirements as set up in the file conanfile.txt can be compiled and installed in the user home directory as:
-```shell
-cd build
-conan install .. --build
-```
+
+    $ cd build
+    $ conan install ..
+
+If building for a 32-bit x86 machine, you might need to specify the platform as:
+
+    $ conan install .. -s arch=x86
 
 
 # Building

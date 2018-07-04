@@ -1,5 +1,5 @@
  [requires]
- gtest/1.8.0@bincrafters/stable
+ pdcurses/3.6@alex-precosky/stable
 
  [generators]
  cmake
