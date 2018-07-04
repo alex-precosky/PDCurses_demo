@@ -1,18 +1,18 @@
+# About
+
+A short demo using PDCurses in a Windows terminal via the conan package manager to get PDCurses
+
+![Screenshot](screenshot.png)
+
 # Requirements
 
 * C++ build system
 * CMake 3.2+
+* C++ Compiler, likely visual studio build tools
 * python 3 and pip (to install the conan package manager)
-* Additional requirements will be installed by conan
+* Additional requirement, PDCurses, will be installed by conan
 
 ## Installing requirements
-
-### C++ Build System
-For Ubuntu Linux, this is usually satisfied by the build_essentials package:
-
-```shell
-sudo apt install build_essentials
-```
 
 ### CMake
 CMake is a build system that generates build files for a system's native build
@@ -47,15 +47,13 @@ If building for a 32-bit x86 machine, you might need to specify the platform as:
 
 
 # Building
-```shell
-cd build
-cmake .. -G "Unix Makefiles"
-cmake --build .
-```
-# Testing
 
-Testing is provided by the Google Test framework. Run tests from the project
-build directory as:
-```shell
-test/bin/test_runner
-```
+To build the project files to compile this:
+
+    $ cd build
+    $ cmake .. -G "Visual Studio 14 2015 Win64"
+    $ cmake --build .
+
+Adjusting the output project file as necessary depending on the version of visual studio to build for.  Then the project can be build as...
+
+    $ msbuild /p:Configuration=Release Project.sln
